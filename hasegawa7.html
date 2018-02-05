@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>HDS-R</title>
+</head>
+<body>
+  <form name="form1">
+  <h1>長谷川式簡易知能評価スケール（HDS-R）</h1>
+  <ul>
+    <li>質問1 お歳はいくつですか?(２年までの誤差は正解)<br><input type="checkbox" name="questions" value="1">年齢±２歳</li>
+    <li>質問2 今日は何年の何月何日ですか？何曜日ですか?<br><input type='checkbox', name='questions', value='1'> 年<br><input type='checkbox', name='questions', value='1'> 月<br><input type='checkbox', name='questions', value='1'> 日<br><input type='checkbox', name='questions', value='1'> 曜日</li>
+    <li>質問3　私達が今いるところはどこですか?<br><input type='checkbox', name='questions', value='2'>自発的に正解<br>ヒント:家ですか？病院ですか？施設ですか?<br><input type='checkbox', name='questions', value='1'>ヒントで正解</li>
+    <li>質問4　これから言う３つの言葉を言ってみてください。梅、犬、自動車。<br><input type='checkbox', name='questions', value='1'> 梅<br><input type='checkbox', name='questions', value='1'> 犬<br><input type='checkbox', name='questions', value='1'> 自動車</li>
+    <li>質問5　100から7を順番に引いてください。<br><input type='checkbox', name='questions', value='1'> 93<br><input type='checkbox', name='questions', value='1'> 86</li>
+    <li>質問6　私がこれから言う数字を逆から言って下さい。6−8−2, 3-5-2-9。<br><input type='checkbox', name='questions', value='1'> 2−8−6<br><input type='checkbox', name='questions', value='1'> 3−5−2-9</li>
+    <li>質問7　先ほど覚えてもらった言葉をもう一度言ってみてください。ヒント:植物、動物、乗り物。<br><input type='checkbox', name='questions', value='2'> 梅<br><input type='checkbox', name='questions', value='2'> 犬<br><input type='checkbox', name='questions', value='2'> 自動車<br><input type='checkbox', name='questions', value='1'> 梅(ヒント後)<br><input type='checkbox', name='questions', value='1'> 犬(ヒント後)<br><input type='checkbox', name='questions', value='1'> 自動車(ヒント後)</li>
+    <li>質問8　これから５つの品物を見せます。それを隠しますので何があったか言ってください。 (時計、鍵、めがね、ペン、硬貨など相互に無関係なもの) <br><input type='checkbox', name='questions', value='0'> 0個<br><input type='checkbox', name='questions', value='1'> 1個<br><input type='checkbox', name='questions', value='2'> 2個<br><input type='checkbox', name='questions', value='3'> 3個<br><input type='checkbox', name='questions', value='4'> 4個<br><input type='checkbox', name='questions', value='5'> 5個</li>
+    <li>質問9　知っている野菜の名前を出来るだけ多く言って下さい。<br><input type='checkbox', name='questions', value='0'> 5個以下<br><input type='checkbox', name='questions', value='1'> 6個<br><input type='checkbox', name='questions', value='2'> 7個<br><input type='checkbox', name='questions', value='3'> 8個<br><input type='checkbox', name='questions', value='4'> 9個<br><input type='checkbox', name='questions', value='5'> 10個以上</li>
+    <li><input type="button" value="集計" onclick="myCheck();"><br></li>
+  </ul>
+  </form>
+  <script src="hasegawa7.js">
+  </script>
+</body>
+</html>
